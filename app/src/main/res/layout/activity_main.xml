@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:layoutDirection="ltr"
+    tools:context=".MainActivity">
+
+    <!-- Battery > 30% -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/labelBattery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/battery_is_above_30"
+        android:textSize="16sp"
+        android:textColor="?attr/colorOnBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnBattery"
+        android:layout_marginTop="16dp"/>
+
+    <ToggleButton
+        android:id="@+id/btnBattery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="@string/ok"
+        android:textOff="@string/check"
+        app:layout_constraintBaseline_toBaselineOf="@id/labelBattery"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Charging -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/labelCharging"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/device_is_charging"
+        android:textSize="16sp"
+        android:textColor="?attr/colorOnBackground"
+        app:layout_constraintTop_toBottomOf="@id/labelBattery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnCharging"
+        android:layout_marginTop="32dp"/>
+
+    <ToggleButton
+        android:id="@+id/btnCharging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="@string/ok"
+        android:textOff="@string/check"
+        app:layout_constraintBaseline_toBaselineOf="@id/labelCharging"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Bluetooth -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/labelBluetooth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetooth_is_on"
+        android:textSize="16sp"
+        android:textColor="?attr/colorOnBackground"
+        app:layout_constraintTop_toBottomOf="@id/labelCharging"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnBluetooth"
+        android:layout_marginTop="32dp"/>
+
+    <ToggleButton
+        android:id="@+id/btnBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="@string/ok"
+        android:textOff="@string/check"
+        app:layout_constraintBaseline_toBaselineOf="@id/labelBluetooth"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Wi-Fi -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/labelWifi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/specific_wi_fi_is_in_range"
+        android:textSize="16sp"
+        android:textColor="?attr/colorOnBackground"
+        app:layout_constraintTop_toBottomOf="@id/labelBluetooth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnWifi"
+        android:layout_marginTop="32dp"/>
+
+    <ToggleButton
+        android:id="@+id/btnWifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="@string/ok"
+        android:textOff="@string/check"
+        app:layout_constraintBaseline_toBaselineOf="@id/labelWifi"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Contact -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/labelContact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_exists"
+        android:textSize="16sp"
+        android:textColor="?attr/colorOnBackground"
+        app:layout_constraintTop_toBottomOf="@id/labelWifi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnContact"
+        android:layout_marginTop="32dp"/>
+
+    <ToggleButton
+        android:id="@+id/btnContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="@string/ok"
+        android:textOff="@string/check"
+        app:layout_constraintBaseline_toBaselineOf="@id/labelContact"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Login Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/labelContact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="48dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

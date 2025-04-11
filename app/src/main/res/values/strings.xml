@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EX1_MobileSecurity1</string>
+    <string name="device_is_charging">🔌 Device is Charging</string>
+    <string name="bluetooth_is_on">📶 Bluetooth is ON</string>
+    <string name="specific_wi_fi_is_in_range">📡  Wi-Fi Sigal-2.4GHz is in range</string>
+    <string name="contact_exists">👤 Contact \'mom\' is in your Contacts</string>
+    <string name="login">Login</string>
+    <string name="access_granted">✅ Access Granted</string>
+    <string name="battery_is_above_30">🔋 Battery is above 30%</string>
+    <string name="check">check</string>
+    <string name="ok">OK</string>
+</resources>

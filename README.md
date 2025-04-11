@@ -6,7 +6,7 @@ An Android app that checks device conditions before allowing access to a second 
 - Verifies battery level (> 30%) and charging state
 - Ensures Bluetooth is ON
 - Confirms Wi-Fi SSID is specific
-- Checks if contact "mom" exists
+- Checks if contact "mom" exists in contacts
 - Built with runtime permissions and real-time system feedback
 
 ## Getting Started
